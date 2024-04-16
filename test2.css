@@ -215,6 +215,11 @@ h6 {
   overflow: hidden; /* Hide any content that overflows the container */
 }
 
+.hero-section {
+  padding: 0px 0;
+  overflow: hidden;
+}
+
 .hero:before {
   content: "";
   background: #152d2e;
@@ -377,6 +382,11 @@ h6 {
     height: 100vh;
   }
 }
+
+/* .hero-img-container {
+  border: 1px solid #84a98c;
+  border-radius: 8px;
+} */
 
 /* Adjust image styles */
 .logo,
