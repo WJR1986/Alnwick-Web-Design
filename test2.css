@@ -116,18 +116,6 @@ h6 {
   opacity: 1; /* Show button when active */
 }
 
-/* Adjustments for landscape mobile and tablet views */
-@media (max-width: 991px) and (orientation: landscape) {
-  .back-to-top {
-    bottom: 20px; /* Adjust bottom position for better visibility */
-    right: 20px; /* Adjust right position for better visibility */
-  }
-
-  .back-to-top i {
-    font-size: 28px; /* Increase icon size for better visibility */
-  }
-}
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
