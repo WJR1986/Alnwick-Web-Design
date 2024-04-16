@@ -210,7 +210,6 @@ h6 {
 .nav-style,
 .navbar-brand {
   background-color: #152d2e !important;
-
   color: #c4dfdf !important;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
@@ -255,6 +254,12 @@ h6 {
   overflow: hidden; /* Hide any content that overflows the container */
   z-index: 1; /* Ensure hero section appears above other elements */
 }
+
+/* .hero-bg {
+  background-image: url("/assets/img/bg.jpg");
+  background-size: cover;
+  background-blend-mode: lighten;
+} */
 
 .hero-section {
   padding: 0;
