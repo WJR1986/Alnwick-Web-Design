@@ -221,14 +221,6 @@ h6 {
   margin: 0 auto;
 }
 
-.navbar-brand {
-  text-decoration: underline;
-
-  /* border: 1px solid #c4dfdf;
-  border-radius: 5px;
-  padding: 5px; */
-}
-
 .navbar-toggler {
   background-color: #52796f;
 }
