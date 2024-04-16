@@ -1,6 +1,14 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
+/*Colours used: 
+background and general dark green: #152d2e
+light green font: #86A789
+nav: #C4DFDF 
+ 
+*/
+
 body {
   font-family: "Open Sans", sans-serif;
   background-color: #152d2e;
@@ -199,9 +207,28 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /* General Navigation */
-.nav-style {
-  background-color: #e3f4f4;
+.nav-style,
+.navbar-brand {
+  background-color: #52796f;
+  color: #c4dfdf !important;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+
+.navbar-brand {
+  text-decoration: underline;
+  /* border: 1px solid #c4dfdf;
+  border-radius: 5px;
+  padding: 5px; */
+}
+
+.navbar-toggler {
+  background-color: #52796f;
+}
+
+.nav-link {
+  color: #c4dfdf !important;
+}
+
 /* Mobile Navigation */
 
 /*--------------------------------------------------------------
@@ -243,7 +270,7 @@ h6 {
   font-size: 56px;
   font-weight: 700;
   line-height: 72px;
-  color: #354f52;
+  color: #dddddd;
   font-family: "Poppins", sans-serif;
 }
 
@@ -501,6 +528,39 @@ section {
   background: #2f3e46;
   color: #fff;
   text-decoration: none;
+}
+
+.feature-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 0.75rem;
+}
+
+.icon-square {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 0.75rem;
+}
+
+.text-shadow-1 {
+  text-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.25);
+}
+.text-shadow-2 {
+  text-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+.text-shadow-3 {
+  text-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.25);
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.feature-icon-small {
+  width: 3rem;
+  height: 3rem;
 }
 
 /* Media query for smaller screens */

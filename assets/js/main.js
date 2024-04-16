@@ -22,19 +22,6 @@ function navbarlinksActive() {
   });
 }
 
-// Function to scroll to an element with header offset
-function scrollto(el) {
-  // Get the height of the header
-  const headerOffset = document.querySelector('#header').offsetHeight;
-  // Get the top position of the target element
-  const elementPos = document.querySelector(el).offsetTop;
-  // Scroll to the target element with an offset
-  window.scrollTo({
-    top: elementPos - headerOffset,
-    behavior: 'smooth'
-  });
-}
-
 // Function to toggle .header-scrolled class on #header when page is scrolled
 function headerScrolled() {
   // Select the header element
@@ -104,12 +91,6 @@ scrolltoLinks.forEach(link => {
   });
 });
 
-// Scroll to hash links on page load with offset
-window.addEventListener('load', () => {
-  if (window.location.hash && document.querySelector(window.location.hash)) {
-    scrollto(window.location.hash);
-  }
-});
 
 // Remove preloader element when window is fully loaded
 const preloader = document.querySelector('#preloader');
