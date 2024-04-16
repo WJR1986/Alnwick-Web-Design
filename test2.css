@@ -510,13 +510,14 @@ section {
   margin-bottom: 0;
 }
 
-/* .about-border {
-  border-top: 1px solid #84a98c;
-  border-bottom: 1px solid #84a98c;
-  width: 75%;
-  margin: 0 auto;
+.about-border {
+  border: 1px solid #84a98c;
+  border-radius: 8px;
+  /* border-bottom: 1px solid #84a98c; */
+  /* width: 75%;
+  margin: 0 auto; */
   padding: 20px;
-} */
+}
 
 /* Styles for the "Learn More" button */
 .btn-learn-more,
@@ -649,6 +650,7 @@ section {
   padding-top: 40px;
   padding-bottom: 40px;
   background-color: #eee;
+  color: #152d2e;
 }
 
 .featurette-heading {
