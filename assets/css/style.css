@@ -1,0 +1,249 @@
+/**************************/
+/* General Styles         */
+/**************************/
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f8f9fa;
+  margin: 0; /* Remove default margin */
+}
+
+/* Link Styles */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .container {
+    max-width: 100%; /* Adjust as needed */
+  }
+}
+
+/* Text Styles */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+p {
+  line-height: 1.5;
+}
+
+/* Button Styles */
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+/* Adjust button group spacing */
+@media (max-width: 575.98px) {
+  .custom-btn-group button {
+    margin-bottom: 10px;
+  }
+}
+.custom-btn-group button {
+  margin-right: 10px;
+}
+
+/* Spacing Styles */
+
+.mt-2 {
+  margin-top: 0.5rem;
+}
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+/**************************/
+/* Navbar Styles          */
+/**************************/
+.nav-style {
+  background-color: #e3f4f4;
+}
+
+/**************************/
+/* Hero Section Styles    */
+/**************************/
+.hero {
+  min-height: calc(100vh - 56px); /* Adjust for the height of the navbar */
+  background-color: #d2e9e9;
+  display: flex; /* Ensure content fills the entire height */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 20px; /* Adjust padding as needed */
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 767.98px) {
+  .hero {
+    min-height: calc(100vh - 100px); /* Adjust for the height of the navbar */
+  }
+  .hero-img {
+    margin-top: 20px;
+    width: 200px;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+  .hero {
+    min-height: calc(100vh - 80px); /* Adjust for the height of the navbar */
+  }
+}
+
+@media (max-width: 768px) and (orientation: portrait) {
+  .hero {
+    min-height: calc(100vh - 100px); /* Adjust for the height of the navbar */
+  }
+}
+
+/**************************/
+/* About Section Styles   */
+/**************************/
+#about,
+#services {
+  background-color: #f8f6f4;
+}
+
+/**************************/
+/* Services Section Styles   */
+/**************************/
+.card-img {
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+.card {
+  margin-bottom: 20px;
+}
+
+/**************************/
+/* Featurette Section Styles */
+/**************************/
+.featurette {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+
+.featurette-heading {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+@media (max-width: 768px) {
+  .featurette-heading {
+    font-size: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .featurette img {
+    margin-top: 20px;
+  }
+}
+
+/**************************/
+/* Team Section Styles */
+/**************************/
+
+/* Base styles for col-lg-4 */
+.team .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Styles for col-lg-4 p */
+.team .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+
+.team h2 {
+  text-align: center !important;
+}
+
+/* Media query for desktop views */
+@media (min-width: 992px) {
+  .team .col-lg-4 p {
+    min-height: 100px; /* Adjust the height as needed */
+  }
+
+  .team h2 {
+    text-align: center !important;
+  }
+}
+
+/**************************/
+/* Contact Section Styles */
+/**************************/
+#contact {
+  background-color: #eee;
+}
+
+.max-width-100 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers its container */
+}
+
+/* Text & Button overlay on image*/
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(
+    196,
+    223,
+    223,
+    0.7
+  ); /* Semi-transparent hex color #C4DFDF */
+  padding: 20px; /* Add some padding to the overlay */
+  border-radius: 10px; /* Add rounded corners */
+  text-align: center; /* Center the content horizontally */
+}
+
+.contact-img-p {
+  color: #627254; /* Dark Green (627254) text color */
+  font-size: 18px; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Add some space below the paragraph */
+}
+
+/* Image alignment on large screens */
+@media (min-width: 768px) {
+  .mx-md-0 {
+    margin-right: auto; /* Align to the right on medium screens and above */
+  }
+}
+
+/**************************/
+/* Other Section Styles   */
+/**************************/
+
+/**************************/
+/* Other Section Styles   */
+/**************************/
