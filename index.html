@@ -16,14 +16,14 @@
     integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Custom CSS -->
-  <link rel="stylesheet" href="/template/assets/css/style.css">
+  <link rel="stylesheet" href="test2.css">
 </head>
 
 <body>
   <!------------>
   <!-- Navbar -->
   <!------------>
-  <nav class="navbar navbar-expand-lg navbar-light nav-style">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">Your Company</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -31,7 +31,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto"> <!-- Changed ml-auto to ms-auto -->
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
             <a class="nav-link" href="#about">About</a>
           </li>
@@ -49,22 +49,25 @@
     </div>
   </nav>
 
+
   <!------------------>
   <!-- Hero Section -->
   <!------------------>
   <section class="hero d-flex align-items-center">
     <div class="container text-center animated-element" data-aos="fade-up" data-aos-duration="1000">
       <!-- Keep the rest of your content here -->
-      <img class="mx-auto mb-4 hero-img" src="/template/assets/img/logo400px.png" alt="">
-      <h1 class="display-5 fw-bold">Centered hero</h1>
-      <p class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most
-        popular front-end open-source toolkit,</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center custom-btn-group">
-        <button type="button" class="btn btn-primary btn-lg px-4">Primary button</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
+      <div class="hero-img-container">
+        <img class="hero-img pt-3" src="assets/img/logo400px.png" alt="">
+      </div>
+      <h1 class="display-5 fw-bold pt-1 pb-1">A muted slogan</h1>
+      <p class="lead mb-2 pb-2">Some text to show off your business can go here!</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center custom-btn-group pt-2">
+        <button type="button" class="btn btn-primary px-4">Primary button</button>
+        <button type="button" class="btn btn-outline-secondary px-4">Secondary</button>
       </div>
     </div>
   </section>
+
 
   <!------------------->
   <!-- About Section -->
@@ -72,8 +75,10 @@
   <section id="about" class="pt-5 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
     <div class="container">
       <h2 class="pb-2 border-bottom">About Us</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lectus vel tortor rhoncus porta. Aliquam erat
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lectus vel tortor rhoncus porta.
+        Aliquam erat
         volutpat. Ut convallis nulla in quam porta, nec volutpat libero suscipit.</p>
+      <a href="#services" class="btn-learn-more learn-more-mob">Learn More</a>
     </div>
   </section>
 
@@ -87,7 +92,7 @@
       <div class="row row-cols-1 row-cols-md-2 g-4 pt-3">
         <div class="col">
           <div class="card mb-4" data-aos="fade-right" data-aos-duration="1000">
-            <img src="/template/assets/img/logo400px.png" class="card-img card-img-top" alt="Service 1">
+            <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 1">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -97,7 +102,7 @@
         </div>
         <div class="col">
           <div class="card mb-4" data-aos="fade-left" data-aos-duration="1000">
-            <img src="/template/assets/img/logo400px.png" class="card-img card-img-top" alt="Service 2">
+            <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 2">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -107,7 +112,7 @@
         </div>
         <div class="col">
           <div class="card mb-4" data-aos="fade-right" data-aos-duration="1000">
-            <img src="/template/assets/img/logo400px.png" class="card-img card-img-top" alt="Service 3">
+            <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 3">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -117,7 +122,7 @@
         </div>
         <div class="col">
           <div class="card mb-4" data-aos="fade-left" data-aos-duration="1000">
-            <img src="/template/assets/img/logo400px.png" class="card-img card-img-top" alt="Service 4">
+            <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 4">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in
@@ -140,11 +145,12 @@
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            <rect width="100%" height="100%" fill="#DDDDDD" />
           </svg>
           <h2 class="fw-normal">Heading</h2>
           <div class="column-content">
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is
+            <p>Some representative placeholder content for the three columns of text below the carousel.
+              This is
               the first column.</p>
             <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
           </div>
@@ -153,7 +159,7 @@
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            <rect width="100%" height="100%" fill="#DDDDDD" />
           </svg>
           <h2 class="fw-normal">Heading</h2>
           <div class="column-content">
@@ -166,7 +172,7 @@
           <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg"
             role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+            <rect width="100%" height="100%" fill="#DDDDDD" />
           </svg>
           <h2 class="fw-normal">Heading</h2>
           <div class="column-content">
@@ -217,7 +223,7 @@
     <div class="row py-lg-5" data-aos="flip-up" data-aos-duration="1000">
       <div class="col-lg-6 col-md-8 mx-auto">
         <h1 class="fw-light">Album example</h1>
-        <p class="lead text-body-secondary">Something short and leading about the collection below—its contents,
+        <p class="lead">Something short and leading about the collection below—its contents,
           the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
           entirely.</p>
         <p>
@@ -432,7 +438,8 @@
   <!--------------------->
   <section id="contact" class="pt-5 pb-5">
     <div class="container">
-      <h2 class="pb-2 border-bottom text-center text-md-left" data-aos="fade-down" data-aos-duration="1000">Contact Us
+      <h2 class="pb-2 border-bottom text-center text-md-left" data-aos="fade-down" data-aos-duration="1000">
+        Contact Us
       </h2>
       <!-- First row -->
       <div class="row justify-content-center mb-4" data-aos="fade-down" data-aos-duration="1000">
@@ -462,8 +469,7 @@
           data-aos="fade-left" data-aos-duration="1000">
           <!-- Image with button -->
           <div class="text-right mb-3 position-relative">
-            <img src="/template/assets/img/phone-booth.jpg" alt="Image" class="max-width-100"
-              style="height: 300px; opacity: 50%">
+            <img src="assets/img/phone-booth.jpg" alt="Image" class="max-width-100" style="height: 300px; opacity: 50%">
             <div class="overlay">
               <p class="contact-img-p">Click here for our</p>
               <button class="btn btn-secondary">Contact Form</button>
@@ -491,14 +497,14 @@
   <!------------------------>
   <!-- Back-To-Top Button -->
   <!------------------------>
-  <a id="back-to-top-btn" href="#" class="btn back-to-top btn-secondary position-fixed"
-    style="bottom: 20px; right: 20px; display: none;">
+  <a id="back-to-top-btn" href="#" class="back-to-top">
     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
       class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
       <path
         d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
     </svg>
   </a>
+
 
   <!------------->
   <!-- Scripts -->
@@ -514,7 +520,7 @@
     integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Custom JS -->
-  <script src="/template/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 
 </html>
