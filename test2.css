@@ -613,6 +613,24 @@ section {
 .card {
   margin-bottom: 20px;
 }
+
+.services-alignment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .mob-services-padding {
+    padding-top: 2rem;
+  }
+}
+
+/* @media (max-width: 992px) {
+  .mob-services-padding {
+    padding-top: 2rem;
+  }
+} */
+
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
@@ -831,16 +849,21 @@ section {
   }
 }
 
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-/* #footer {
+/* Custom Footer Styles */
+.custom-footer {
   color: #444444;
   font-size: 14px;
   background: #f8fbfe;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
 
+.custom-footer p {
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Remove unnecessary styles */
+/*
 #footer .footer-top {
   padding: 60px 0 30px 0;
   background: #fff;
@@ -986,7 +1009,8 @@ section {
   background: #3194db;
   color: #fff;
   text-decoration: none;
-} */
+}
+*/
 
 /*--------------------------------------------------------------
 # Cookie Consent
