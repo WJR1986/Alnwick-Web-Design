@@ -197,7 +197,7 @@
         <div class="col-md-7 services-alignment" data-aos="fade-right" data-aos-duration="1000">
           <h2 class="featurette-heading">Search Engine Optimisation <br /> <span class="text-muted">Beyond
               aesthetics!</span></h2>
-          <p class="lead pt-1">SEO-friendly website employing the latest
+          <p class="lead pt-1">SEO-friendly websites employing the latest
             techniques
             to enhance
             your visibility and drive traffic to your business.
@@ -243,9 +243,7 @@
       </h2>
       <!-- First row -->
       <div class="row justify-content-center pb-2 pt-2" data-aos="fade-down" data-aos-duration="1000">
-        <!-- <div class="col-md-4 text-center">
-          <p><i class="bi bi-telephone-fill"></i> 123-456-7890</p>
-        </div> -->
+        <!-- Contact information -->
         <div class="col-md-4 text-center">
           <p><i class="bi bi-envelope-fill"></i> alnwickwebdesign@gmail.com</p>
         </div>
@@ -258,7 +256,7 @@
       <div class="row">
         <!-- Left column for the map -->
         <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
-          <!-- Google Map (replace the iframe src with your Google Maps embed code) -->
+          <!-- Google Map -->
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36240.966363829495!2d-1.7491201634223048!3d55.40929787730068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487df0ad52acc475%3A0x8eb5199fa5e06b68!2sAlnwick!5e0!3m2!1sen!2suk!4v1713280600228!5m2!1sen!2suk"
             width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -271,18 +269,37 @@
             <img src="assets/img/phone-booth.jpg" alt="Image" class="max-width-100" style="height: 300px; opacity: 50%">
             <div class="overlay">
               <p class="contact-img-p">Click here for our</p>
-              <button class="btn btn-secondary">Contact Form</button>
+              <button id="toggleFormButton" class="btn btn-secondary">Contact Form</button>
             </div>
           </div>
         </div>
       </div>
 
+      <div id="contactFormDiv" class="row text-center justify-content-center mb-4" data-aos="fade-up">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="iframe-container" id="iframeContainer" style="position: relative;">
+              <iframe id="JotFormIFrame-241073524145348" title="AWC Contact Form" onload="window.parent.scrollTo(0,0)"
+                allowtransparency="true" allow="geolocation; microphone; camera; fullscreen"
+                src="https://form.jotform.com/241073524145348" frameborder="0"
+                style="min-width:100%;max-width:100%;height:750px;border:none;" scrolling="no">
+              </iframe>
+              <button id="closeFormBtn" class="close-form-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-circle-fill"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm3.354 4.646a.5.5 0 0 0-.708 0L8 7.293 5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 1 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0 0-.708z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
     </div>
   </section>
-
-
-
-
 
   <!------------>
   <!-- Footer -->
@@ -290,8 +307,15 @@
   <footer class="text-center py-4 custom-footer">
     <div class="container">
       <p>&copy; 2024 Built by Will @ Alnwick Web Design.</p>
+      <hr class="divider">
+      <div class="social-buttons">
+        <a href="#" class="social-button"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="social-button"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-button"><i class="fab fa-instagram"></i></a>
+      </div>
     </div>
   </footer>
+
 
 
   <!------------------------>

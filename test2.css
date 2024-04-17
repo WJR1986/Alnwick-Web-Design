@@ -83,7 +83,7 @@ h6 {
 --------------------------------------------------------------*/
 .back-to-top {
   position: fixed;
-  bottom: 15px;
+  bottom: 10px;
   right: 15px;
   z-index: 996;
   width: 40px;
@@ -97,6 +97,11 @@ h6 {
   justify-content: center; /* Center icon horizontally */
   align-items: center; /* Center icon vertically */
   border-radius: 8px; /* Adjust border radius for a rounded square */
+}
+
+.back-to-top svg {
+  width: 24px;
+  height: 24px;
 }
 
 .back-to-top i {
@@ -862,155 +867,72 @@ section {
   margin-bottom: 0;
 }
 
-/* Remove unnecessary styles */
-/*
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-  background: #fff;
+.social-buttons {
+  margin-top: 20px;
 }
 
-#footer .footer-top .footer-contact {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-contact h3 {
-  font-size: 26px;
-  margin: 0 0 10px 0;
-  padding: 2px 0 2px 0;
-  line-height: 1;
-  font-weight: 300;
-}
-
-#footer .footer-top .footer-contact p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-  color: #777777;
-}
-
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #124265;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #2487ce;
-  font-size: 18px;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #777777;
-  transition: 0.3s;
+.social-button {
   display: inline-block;
-  line-height: 1;
-}
-
-#footer .footer-top .footer-links ul a:hover {
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 20px; /* Adjust the font size as needed */
+  color: #152d2e; /* Icon color */
+  border-radius: 50%; /* Rounded shape */
   text-decoration: none;
-  color: #2487ce;
+  transition: color 0.3s;
 }
 
-#footer .footer-newsletter {
-  font-size: 15px;
+.social-button:hover {
+  color: #84a98c; /* Icon color on hover */
 }
 
-#footer .footer-newsletter h4 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #444444;
+.container {
   position: relative;
-  padding-bottom: 12px;
 }
 
-#footer .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
+.divider {
+  border-top: 1px solid #ccc; /* Divider line style */
+  margin-top: 20px; /* Adjust distance between paragraph and divider */
+  margin-bottom: 20px; /* Adjust distance between divider and social buttons */
+}
+#contactFormDiv {
+  overflow: hidden; /* Hide content when collapsed */
+  height: 0; /* Initially collapsed */
+  transition: height 0.3s ease; /* Smooth transition effect */
+}
+
+#contactFormDiv.expanded {
+  height: 750px; /* Expanded height */
+}
+
+#iframeContainer {
   position: relative;
-  border-radius: 5px;
-  text-align: left;
-  border: 1px solid #cde5f6;
 }
 
-#footer .footer-newsletter form input[type="email"] {
-  border: 0;
-  padding: 4px 8px;
-  width: calc(100% - 100px);
-}
-
-#footer .footer-newsletter form input[type="submit"] {
+.close-form-btn {
   position: absolute;
-  top: -1px;
-  right: -2px;
-  bottom: -1px;
-  border: 0;
-  background: none;
-  font-size: 16px;
-  padding: 0 20px 2px 20px;
-  background: #2487ce;
+  top: 5px; /* Adjust as needed */
+  right: 5px; /* Adjust as needed */
+  width: 40px;
+  height: 40px;
+  background-color: #52796f;
   color: #fff;
-  transition: 0.3s;
-  border-radius: 0 5px 5px 0;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease; /* Transition for smooth animation */
+  display: flex;
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  border-radius: 8px; /* Adjust border radius for a rounded square */
+  border: none;
 }
 
-#footer .footer-newsletter form input[type="submit"]:hover {
-  background: #3194db;
+.close-form-btn:hover {
+  background-color: #0056b3;
 }
 
-#footer .credits {
-  padding-top: 5px;
-  font-size: 13px;
-  color: #444444;
+.close-form-btn svg {
+  width: 24px;
+  height: 24px;
 }
-
-#footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: #2487ce;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 5px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-}
-
-#footer .social-links a:hover {
-  background: #3194db;
-  color: #fff;
-  text-decoration: none;
-}
-*/
 
 /*--------------------------------------------------------------
 # Cookie Consent

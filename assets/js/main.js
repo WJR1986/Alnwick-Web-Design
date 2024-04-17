@@ -121,3 +121,26 @@ if (mobileNavToggle) {
     this.classList.toggle('bi-x');
   });
 }
+
+// Collapsable Form event listener
+document.addEventListener('DOMContentLoaded', function() {
+  const toggleFormButton = document.getElementById('toggleFormButton');
+  const contactFormDiv = document.getElementById('contactFormDiv');
+  const closeFormBtn = document.getElementById('closeFormBtn');
+
+  toggleFormButton.addEventListener('click', function() {
+    toggleFormVisibility();
+  });
+
+  closeFormBtn.addEventListener('click', function() {
+    toggleFormVisibility();
+  });
+
+  function toggleFormVisibility() {
+    if (contactFormDiv.classList.contains('expanded')) {
+      contactFormDiv.classList.remove('expanded');
+    } else {
+      contactFormDiv.classList.add('expanded');
+    }
+  }
+});
