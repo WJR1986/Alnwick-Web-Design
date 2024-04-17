@@ -221,16 +221,22 @@ h6 {
 
 .navbar {
   border-bottom: 1px solid #52796f;
-  width: 75%;
+  width: 100%;
   margin: 0 auto;
 }
 
-.navbar-toggler {
-  background-color: #52796f;
+.navbar-nav {
+  margin: 0 auto; /* Center the nav links */
+  display: flex; /* Ensure the flex properties work */
+  justify-content: center; /* Center the nav links horizontally */
 }
 
 .nav-link {
   color: #c4dfdf !important;
+}
+
+.navbar-toggler {
+  background-color: #52796f;
 }
 
 /* Mobile Navigation */
