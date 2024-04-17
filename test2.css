@@ -252,6 +252,7 @@ h6 {
 /* Hero Section */
 .hero {
   width: auto; /* Adjust as needed */
+  border: none !;
   min-width: 100%; /* Ensure the hero fills the entire width of the viewport */
   min-height: 100vh; /* Use min-height instead of height to cover the entire viewport */
   position: relative;
@@ -274,10 +275,10 @@ h6 {
   content: "";
   background: #152d2e;
   position: absolute;
-  bottom: 0;
+  top: 0; /* Adjusted to cover the entire hero section */
   left: 0;
   right: 0;
-  height: 50%; /* Adjusted to cover only bottom half */
+  bottom: 0;
 }
 
 .hero .container {
