@@ -10,7 +10,7 @@ nav: #C4DFDF
 */
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #152d2e;
   color: #dddddd;
 }
@@ -926,7 +926,7 @@ section {
 }
 
 .close-form-btn:hover {
-  background-color: #0056b3;
+  background-color: #84a98c;
 }
 
 .close-form-btn svg {
@@ -966,4 +966,31 @@ section {
   text-decoration: underline;
   color: blue;
   margin-left: 10px;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: -30px; /* Adjust to move the tooltip up */
+  left: -120px; /* Adjust to move the tooltip to the left */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
