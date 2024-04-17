@@ -604,6 +604,11 @@ section {
     margin: 0 auto; /* Remove any margin */
   }
 
+  .about-heading-mob {
+    align-self: center !important;
+    padding-top: 0;
+  }
+
   .about-mob-styling {
     text-align: center !important;
   }
