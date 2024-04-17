@@ -917,7 +917,7 @@ section {
   height: 40px;
   background-color: #52796f;
   color: #fff;
-  transition: all 0.4s ease; /* Transition for smooth animation */
+  transition: all 0.8s ease; /* Transition for smooth animation */
   display: flex;
   justify-content: center; /* Center icon horizontally */
   align-items: center; /* Center icon vertically */
