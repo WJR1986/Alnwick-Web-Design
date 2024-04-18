@@ -10,7 +10,8 @@ nav: #C4DFDF
 */
 
 body {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
+  font-family: "Open Sans", sans-serif;
   background-color: #152d2e;
   color: #dddddd;
 }
