@@ -82,12 +82,23 @@ h6 {
 /* Portfolio Section */
 /* ---------------------- */
 
+#logos,
+.logos {
+  background-color: #84a98c !important;
+}
+
 .portfolio-bg {
-  background-color: #84a98c;
+  background-color: #84a98c !important;
 }
 
 .portfolio-btn {
   color: #152d2e;
+  border: 1px solid #fff;
+}
+
+.portfolio-btn:hover {
+  background-color: #152d2e !important;
+  color: #84a98c;
   border: 1px solid #fff;
 }
 
@@ -651,9 +662,9 @@ section {
 }
 
 .card-img-top-portfolio {
-  padding-top: 40px;
-  max-height: 400px; /* Set the desired height */
-  object-fit: contain; /* Maintain aspect ratio while covering the container */
+  padding-top: 40px !important;
+  max-height: 400px !important; /* Set the desired height */
+  object-fit: contain !important; /* Maintain aspect ratio while covering the container */
 }
 
 .services-alignment {
