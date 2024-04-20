@@ -78,6 +78,22 @@ h6 {
 .custom-btn-group button {
   margin-right: 10px;
 }
+/* ----------------------- */
+/* Portfolio Section */
+/* ---------------------- */
+
+.portfolio-bg {
+  background-color: #84a98c;
+}
+
+.portfolio-btn {
+  color: #152d2e;
+  border: 1px solid #fff;
+}
+
+.btn-group-porfolio {
+  margin: 0 auto;
+}
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -623,13 +639,21 @@ section {
   color: #152d2e;
 }
 
-.card-img {
-  height: auto;
-  max-width: 100%;
-  object-fit: contain;
+.card-img-top {
+  /* padding-top: 10px; */
+  max-height: 400px; /* Set the desired height */
+  object-fit: contain; /* Maintain aspect ratio while covering the container */
 }
-.card {
-  margin-bottom: 20px;
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+}
+
+.card-img-top-portfolio {
+  padding-top: 40px;
+  max-height: 400px; /* Set the desired height */
+  object-fit: contain; /* Maintain aspect ratio while covering the container */
 }
 
 .services-alignment {
