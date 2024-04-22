@@ -94,6 +94,7 @@ h6 {
 .portfolio-btn {
   color: #152d2e;
   border: 1px solid #fff;
+  min-width: 100px;
 }
 
 .portfolio-btn:hover {
@@ -104,6 +105,12 @@ h6 {
 
 .btn-group-porfolio {
   margin: 0 auto;
+}
+
+.section-with-border {
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 8px;
+  padding: 20px; /* Add some padding for spacing */
 }
 
 /*--------------------------------------------------------------

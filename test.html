@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Website</title>
+    <title>Alnwick Web Design</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -16,22 +16,27 @@
         integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="test2.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/17e7e77638.js" crossorigin="anonymous"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
 </head>
 
 <body>
+
     <!------------>
     <!-- Navbar -->
     <!------------>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg nav-style">
         <div class="container">
-            <a class="navbar-brand" href="#">Your Company</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <a class="navbar-brand" href="#"></a>
+            <button class="navbar-toggler ml-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav justify-content-center"> <!-- Modified line -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
@@ -39,7 +44,7 @@
                         <a class="nav-link" href="#services">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-link" href="/portfolio.html">Portfolio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -50,35 +55,97 @@
     </nav>
 
 
+
     <!------------------>
     <!-- Hero Section -->
     <!------------------>
-    <section class="hero d-flex align-items-center">
-        <div class="container text-center animated-element" data-aos="fade-up" data-aos-duration="1000">
+    <section class="hero d-flex align-items-center hero-section pb-2">
+        <div class="container hero-bg text-center animated-element" data-aos="fade-up" data-aos-duration="1000">
             <!-- Keep the rest of your content here -->
             <div class="hero-img-container">
-                <img class="hero-img pt-3" src="assets/img/logo400px.png" alt="">
+                <img class="hero-img" src="assets/img/logo.png" alt="">
             </div>
-            <h1 class="display-5 fw-bold pt-1 pb-1">A muted slogan</h1>
-            <p class="lead mb-2 pb-2">Some text to show off your business can go here!</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center custom-btn-group pt-2">
-                <button type="button" class="btn btn-primary px-4">Primary button</button>
-                <button type="button" class="btn btn-outline-secondary px-4">Secondary</button>
+            <h1 class="display-5 fw-bold pt-1 pb-1">Alnwick Web Design</h1>
+            <p class="lead mb-2 pb-2"><em>Designing Websites, Elevating Brands </em></p>
+            <div class="text-center">
+                <a href="#services" class="btn-get-started">Our Services</a>
             </div>
         </div>
     </section>
 
 
+
     <!------------------->
     <!-- About Section -->
     <!------------------->
-    <section id="about" class="pt-5 text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-        <div class="container">
-            <h2 class="pb-2 border-bottom">About Us</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed lectus vel tortor rhoncus porta.
-                Aliquam erat
-                volutpat. Ut convallis nulla in quam porta, nec volutpat libero suscipit.</p>
-            <a href="#services" class="btn-learn-more learn-more-mob">Learn More</a>
+    <section id="about" class="pt-3 text-center mt-0">
+
+        <div class="container px-4 py-5 " data-aos="fade-right" data-aos-duration="1000">
+
+
+            <div class="row row-cols-1 row-cols-md-2 g-5 py-5">
+                <div class="col d-flex flex-column align-items-start gap-2">
+                    <h2 class="pb-3 border-bottom about-heading-mob">About Us</h2>
+                    <h2 class="fw-bold text-body-emphasis text-start about-mob-styling">Welcome to Alnwick Web Design,
+                        your
+                        destination for
+                        all things digital branding and design.</h2>
+                    <p class="text-body-secondary text-start about-mob-styling">Based in Alnwick, Northumberland, I
+                        offer services
+                        to help you
+                        maximise your digital presence. From website
+                        design to content creation for social media, I am here to help!</p>
+                    <a href="#services" class="btn-learn-more learn-more-mob text-start">Learn More</a>
+                </div>
+
+                <div class="col">
+                    <div class="row row-cols-1 row-cols-sm-2 g-4">
+                        <div class="col d-flex flex-column align-items-center gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center feature-icon bg-gradient fs-4 rounded-3">
+                                <i class="fas fa-cubes"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Website Design, Audit and Copy</h4>
+                            <p class="text-body-secondary">Custom, highly-responsive websites designed to suit any
+                                budget. Don't be
+                                shy enquiring!</p>
+                        </div>
+
+                        <div class="col d-flex flex-column align-items-center gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center feature-icon bg-gradient fs-4 rounded-3">
+                                <i class="fa-solid fa-palette"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Graphic and Logo Design</h4>
+                            <p class="text-body-secondary">Make your social media account, website or workwear stand out
+                                with a custom
+                                logo or graphic advert.</p>
+                        </div>
+
+                        <div class="col d-flex flex-column align-items-center gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center feature-icon bg-gradient fs-4 rounded-3">
+                                <i class="fa-solid fa-envelope-open-text"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Email and Print Marketing</h4>
+                            <p class="text-body-secondary">Produce attractive and engaging marketing media to drive
+                                traffic to your
+                                business.</p>
+                        </div>
+
+                        <div class="col d-flex flex-column align-items-center gap-2">
+                            <div
+                                class="feature-icon-small d-inline-flex align-items-center justify-content-center feature-icon bg-gradient fs-4 rounded-3">
+                                <i class="fa-solid fa-route"></i>
+                            </div>
+                            <h4 class="fw-semibold mb-0 text-body-emphasis">Content Planning and Ideation</h4>
+                            <p class="text-body-secondary">Create a strategy and clear plan for how to approach your
+                                digital marketing
+                                campaigns.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -86,364 +153,95 @@
     <!---------------------->
     <!-- Services Section -->
     <!---------------------->
-    <section id="services" class="pt-5 pb-2 text-center">
-        <div class="container">
-            <h2 class="pb-2 border-bottom" data-aos="fade-right" data-aos-duration="1000">Our Services</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4 pt-3">
-                <div class="col">
-                    <div class="card mb-4" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4" data-aos="fade-left" data-aos-duration="1000">
-                        <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4" data-aos="fade-right" data-aos-duration="1000">
-                        <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-4" data-aos="fade-left" data-aos-duration="1000">
-                        <img src="assets/img/logo400px.png" class="card-img card-img-top" alt="Service 4">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a longer card with supporting text below as a natural lead-in
-                                to additional content. This content is a little bit longer.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!----------------------->
-    <!-- Team Section -->
-    <!----------------------->
-    <section id="team" class="team py-5">
-        <div class="container" data-aos="fade-up" data-aos-duration="1000">
-            <h2 class="pb-2 border-bottom">Meet the Team</h2>
-            <div class="row pt-5">
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#DDDDDD" />
-                    </svg>
-                    <h2 class="fw-normal">Heading</h2>
-                    <div class="column-content">
-                        <p>Some representative placeholder content for the three columns of text below the carousel.
-                            This is
-                            the first column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#DDDDDD" />
-                    </svg>
-                    <h2 class="fw-normal">Heading</h2>
-                    <div class="column-content">
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the
-                            second column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div>
-                </div><!-- /.col-lg-4 -->
-                <div class="col-lg-4">
-                    <svg class="bd-placeholder-img rounded-circle" width="140" height="140"
-                        xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder"
-                        preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <title>Placeholder</title>
-                        <rect width="100%" height="100%" fill="#DDDDDD" />
-                    </svg>
-                    <h2 class="fw-normal">Heading</h2>
-                    <div class="column-content">
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-                    </div>
-                </div><!-- /.col-lg-4 -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.team -->
-
-
-    <!------------------------>
-    <!-- Featurette Section -->
-    <!------------------------>
-    <section id="featurette" class="featurette py-5">
-        <div class="container">
-            <div class="row mb-5">
-                <div class="col-md-7" data-aos="fade-right" data-aos-duration="1000">
-                    <h2 class="featurette-heading">Featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span></h2>
-                    <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                        prose here.</p>
+    <section id="services" class="py-5 text-left">
+        <div class=" container ">
+            <h2 class="pb-2 border-bottom " data-aos="fade-down" data-aos-duration="1000">Our Services</h2>
+            <div class="row mb-5 mt-4">
+                <div class="col-md-7 services-alignment" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="featurette-heading pb-3" style="text-decoration: underline">Website Design.</h2>
+                    <h2> <span class="text-muted">It's not just about pixels
+                            and
+                            code;</span></h2>
+                    <p class="lead pt-2">It's about understanding your brand identity and translating it into compelling
+                        visuals.
+                    </p>
+                    <p class="lead">We can either hard-code a website from scratch, or utilise website builders,
+                        depending on
+                        your
+                        budget.</p>
+                    <p class="lead">You can also choose to embrace a Content Management System (CMS), such as Wordpress
+                        or Wix, to
+                        allow
+                        you to edit your own site.</p>
                 </div>
                 <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
-                    <img src="https://via.placeholder.com/500" class="img-fluid" alt="Featurette Image">
+                    <img src="assets/img/webdesign.png" class="img-fluid" alt="Web Design Image">
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-5" data-aos="fade-right" data-aos-duration="1000">
-                    <img src="https://via.placeholder.com/500" class="img-fluid" alt="Featurette Image">
+                <div class="col-md-7 pt-4 services-alignment" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="featurette-heading pb-3" style="text-decoration: underline">Logo, Ads and Content
+                        Creation</h2>
+                    <h2><span class="text-muted">Schedule
+                            pre-created content to save time!</span></h2>
+                    <p class="lead pt-1">Make your business stand out with a modern logo or branding kit. </p>
+                    <p class="lead pt-1">We can produce individual, or bulk, image and video content for your social
+                        media
+                        profiles.</p>
+                    <p class="lead pt-1">Advice and scheduling facilities are provided to help you proactively manage
+                        your content
+                        delivery.
+                    </p>
                 </div>
-                <div class="col-md-7" data-aos="fade-left" data-aos-duration="1000">
-                    <h2 class="featurette-heading">Featurette heading. <span class="text-muted">It’ll blow your
-                            mind.</span></h2>
-                    <p class="lead">Some great placeholder content for the second featurette here. Imagine some exciting
-                        prose here.</p>
+                <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/img/logodesign.png" class="img-fluid" alt="Logo Design Image">
                 </div>
+
+            </div>
+        </div>
+        <div class=" container ">
+            <div class="row mb-5 pt-4">
+                <div class="col-md-7 services-alignment" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="featurette-heading pb-3" style="text-decoration: underline">Search Engine Optimisation
+                        <br />
+                    </h2>
+                    <h2> <span class="text-muted">Beyond
+                            aesthetics!</span></h2>
+                    <p class="lead pt-1">SEO-friendly websites employing the latest
+                        techniques
+                        to enhance
+                        your visibility and drive traffic to your business.
+                    </p>
+                    <p class="lead">We help with social media account set-up and getting you noticed across all
+                        platforms.</p>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/img/SEO2.png" class="img-fluid" alt="Search Engine Optimsation (SEO) Image">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-7 services-alignment" data-aos="fade-right" data-aos-duration="1000">
+                    <h2 class="featurette-heading pb-3" style="text-decoration: underline">Email and Print Marketing
+                        <br />
+                    </h2>
+                    <h2> <span class="text-muted">Remain attractive and
+                            relevant to your audience!</span></h2>
+                    <p class="lead pt-1">We assist with planning a digital marketing strategy and utilise
+                        industry-leading tools
+                        to maximise
+                        return.</p>
+                    <p class="lead pt-1">We can help with anything from email marketing and newsletters, to Facebook and
+                        Google
+                        adverts.
+                    </p>
+                </div>
+                <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
+                    <img src="assets/img/marketing2.png" class="img-fluid" alt="Email Marketing Image">
+                </div>
+
             </div>
         </div>
     </section>
-
-
-    <!----------------------->
-    <!-- Portfolio Section -->
-    <!----------------------->
-    <section id="portfolio" class="pt-5 pb-2 text-center container">
-        <div class="row py-lg-5" data-aos="flip-up" data-aos-duration="1000">
-            <div class="col-lg-6 col-md-8 mx-auto">
-                <h1 class="fw-light">Album example</h1>
-                <p class="lead">Something short and leading about the collection below—its contents,
-                    the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-                    entirely.</p>
-                <p>
-                    <a href="#" class="btn btn-primary my-2">Main call to action</a>
-                    <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-                </p>
-            </div>
-        </div>
-    </section>
-
-    <div class="album pb-5 pt-0 bg-body-tertiary">
-        <div class="container">
-
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" data-aos="fade-right" data-aos-duration="1000">
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card shadow-sm">
-                        <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
-                            xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
-                            preserveAspectRatio="xMidYMid slice" focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                                dy=".3em" text-anchor="middle">Thumbnail</text>
-                        </svg>
-                        <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                </div>
-                                <small class="text-body-secondary">9 mins</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!--------------------->
     <!-- Contact Section -->
@@ -454,15 +252,16 @@
                 Contact Us
             </h2>
             <!-- First row -->
-            <div class="row justify-content-center mb-4" data-aos="fade-down" data-aos-duration="1000">
+            <div class="row justify-content-center pb-2 pt-2" data-aos="fade-down" data-aos-duration="1000">
+                <!-- Contact information -->
                 <div class="col-md-4 text-center">
-                    <p><i class="bi bi-telephone-fill"></i> 123-456-7890</p>
+                    <p class="lead"><i class="bi bi-telephone-fill"></i> 07488 315 367</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <p><i class="bi bi-envelope-fill"></i> example@example.com</p>
+                    <p class="lead"><i class="bi bi-envelope-fill"></i> will@alnwickwebdesign.co.uk</p>
                 </div>
                 <div class="col-md-4 text-center">
-                    <p><i class="bi bi-geo-fill"></i> 123 Main St, City, Country</p>
+                    <p class="lead"><i class="bi bi-geo-fill"></i> Alnwick, Northumberland</p>
                 </div>
             </div>
 
@@ -470,12 +269,11 @@
             <div class="row">
                 <!-- Left column for the map -->
                 <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
-                    <!-- Google Map (replace the iframe src with your Google Maps embed code) -->
+                    <!-- Google Map -->
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d158865.24889709743!2d-0.2416810823130959!3d51.52877184052309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b2a2441e295%3A0xb2b26911e50b6da!2sLondon%2C%20UK!5e0!3m2!1sen!2s!4v1631927878554!5m2!1sen!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36240.966363829495!2d-1.7491201634223048!3d55.40929787730068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487df0ad52acc475%3A0x8eb5199fa5e06b68!2sAlnwick!5e0!3m2!1sen!2suk!4v1713280600228!5m2!1sen!2suk"
                         width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
-
                 <!-- Right column for the image -->
                 <div class="col-md-6 d-flex align-items-right justify-content-center flex-column position-relative"
                     data-aos="fade-left" data-aos-duration="1000">
@@ -485,34 +283,63 @@
                             style="height: 300px; opacity: 50%">
                         <div class="overlay">
                             <p class="contact-img-p">Click here for our</p>
-                            <button class="btn btn-secondary">Contact Form</button>
+                            <button id="toggleFormButton" class="btn btn-secondary">Contact Form</button>
                         </div>
                     </div>
                 </div>
             </div>
 
+            <div id="contactFormDiv" class="row text-center justify-content-center mb-4" data-aos="fade-up">
+                <div class="row justify-content-center">
+                    <div class="col-md-8">
+                        <div class="iframe-container" id="iframeContainer" style="position: relative;">
+                            <iframe id="JotFormIFrame-241073524145348" title="AWC Contact Form"
+                                onload="window.parent.scrollTo(0,0)" allowtransparency="true"
+                                allow="geolocation; microphone; camera; fullscreen"
+                                src="https://form.jotform.com/241073524145348" frameborder="0"
+                                style="min-width:100%;max-width:100%;height:750px;border:none;" scrolling="no">
+                            </iframe>
+                            <button id="closeFormBtn" class="close-form-btn" title="Close Form">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
+                                    class="bi bi-x-circle-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm3.354 4.646a.5.5 0 0 0-.708 0L8 7.293 5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 1 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0 0-.708z" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
         </div>
     </section>
-
-
-
-
 
     <!------------>
     <!-- Footer -->
     <!------------>
-    <footer class="bg-dark text-light text-center py-4">
+    <footer class="text-center py-4 custom-footer">
         <div class="container">
-            <p>&copy; 2024 Your Company. All rights reserved.</p>
+            <p>&copy; 2024. Website built by Will @ Alnwick Web Design.</p>
+            <hr class="divider">
+            <div class="social-buttons">
+                <a href="#" class="social-button"><i class="fab fa-facebook-f"></i></a>
+                <!-- <a href="#" class="social-button"><i class="fab fa-twitter"></i></a> -->
+                <a href="https://www.instagram.com/alnwickwebdesign/" class="social-button"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
         </div>
     </footer>
+
+
 
     <!------------------------>
     <!-- Back-To-Top Button -->
     <!------------------------>
-    <a id="back-to-top-btn" href="#" class="back-to-top">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-            class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+    <a id="back-to-top-btn" href="#" class="back-to-top" title="Back to Top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-arrow-up-circle-fill"
+            viewBox="0 0 16 16">
             <path
                 d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z" />
         </svg>
