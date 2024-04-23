@@ -1,0 +1,65 @@
+/* General Styles */
+.custom-footer {
+  margin-top: 50px;
+  /* Adjust as needed */
+}
+
+#portfolio {
+  margin-bottom: 50px;
+  /* Adjust as needed */
+}
+
+.btn-form {
+  background-color: #152d2e;
+  color: #fff;
+  border: none;
+}
+
+/* Form Styles */
+.form-container {
+  background-color: #86a789;
+  border-radius: 8px;
+  color: #152d2e;
+  max-width: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .form-container {
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1024px) {
+  .form-container {
+    max-width: 80%;
+  }
+}
+
+/* Card Styles */
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+}
+
+.custom-card img {
+  width: 100%;
+  height: auto;
+  filter: brightness(90%);
+  transition: filter 0.3s ease;
+}
+
+.custom-card:hover img {
+  filter: brightness(100%);
+}
+
+.card-text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  opacity: 0.9;
+}
