@@ -5,22 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Alnwick Web Design</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.css"
     integrity="sha512-ywmPbuxGS4cJ7GxwCX+bCJweeext047ZYU2HP52WWKbpJnF4/Zzfr2Bo19J4CWPXZmleVusQ9d//RB5bq0RP7w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Animate on Scroll CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/heroes.css">
+  <link rel="stylesheet" href="assets/css/features.css">
+  <link rel="stylesheet" href="assets/css/modal.css">
+  <link rel="stylesheet" href="assets/css/portfolio.css">
   <link rel="stylesheet" href="assets/css/style.css">
+
   <!-- Font Awesome -->
   <script src="https://kit.fontawesome.com/17e7e77638.js" crossorigin="anonymous"></script>
+
+  <!-- Google reCaptcha -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   <!-- Favicon -->
   <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+  <!-- <script src="assets/js/color-modes.js"></script> -->
 </head>
 
 <body>
@@ -83,7 +96,7 @@
     <div class="container px-4 py-5 " data-aos="fade-right" data-aos-duration="1000">
 
 
-      <div class="row row-cols-1 row-cols-md-2 g-5 py-5">
+      <div class="row row-cols-1 row-cols-md-2 g-5 py-2">
         <div class="col d-flex flex-column align-items-start gap-2">
           <h2 class="pb-3 border-bottom about-heading-mob">About Us</h2>
           <h2 class="fw-bold text-body-emphasis text-start about-mob-styling">Welcome to Alnwick Web Design,
@@ -148,7 +161,7 @@
       </div>
     </div>
   </section>
-
+  <div class="b-example-divider"></div>
 
   <!---------------------->
   <!-- Services Section -->
@@ -175,7 +188,7 @@
             you to edit your own site.</p>
         </div>
         <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
-          <img src="assets/img/webdesign.png" class="img-fluid" alt="Web Design Image">
+          <img src="assets/img/webdesign.png" class="img-fluid rounded" alt="Web Design Image">
         </div>
       </div>
       <div class="row">
@@ -194,7 +207,7 @@
           </p>
         </div>
         <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
-          <img src="assets/img/logodesign.png" class="img-fluid" alt="Logo Design Image">
+          <img src="assets/img/logodesign.png" class="img-fluid rounded" alt="Logo Design Image">
         </div>
 
       </div>
@@ -216,7 +229,7 @@
             platforms.</p>
         </div>
         <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
-          <img src="assets/img/SEO2.png" class="img-fluid" alt="Search Engine Optimsation (SEO) Image">
+          <img src="assets/img/SEO2.png" class="img-fluid rounded" alt="Search Engine Optimsation (SEO) Image">
         </div>
       </div>
       <div class="row">
@@ -236,81 +249,90 @@
           </p>
         </div>
         <div class="col-md-5" data-aos="fade-left" data-aos-duration="1000">
-          <img src="assets/img/marketing2.png" class="img-fluid" alt="Email Marketing Image">
+          <img src="assets/img/marketing2.png" class="img-fluid rounded" alt="Email Marketing Image">
         </div>
 
       </div>
     </div>
   </section>
-
+  <div class="b-example-divider"></div>
   <!--------------------->
   <!-- Contact Section -->
   <!--------------------->
-  <section id="contact" class="pt-5 pb-5">
+  <section id="contact" class="py-5">
     <div class="container">
       <h2 class="pb-2 border-bottom text-center text-md-left" data-aos="fade-down" data-aos-duration="1000">
         Contact Us
       </h2>
-      <!-- First row -->
-      <div class="row justify-content-center pb-2 pt-2" data-aos="fade-down" data-aos-duration="1000">
-        <!-- Contact information -->
-        <div class="col-md-4 text-center">
-          <p class="lead"><i class="bi bi-telephone-fill"></i> 07488 315 367</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <p class="lead"><i class="bi bi-envelope-fill"></i> will@alnwickwebdesign.co.uk</p>
-        </div>
-        <div class="col-md-4 text-center">
-          <p class="lead"><i class="bi bi-geo-fill"></i> Alnwick, Northumberland</p>
-        </div>
-      </div>
+      <div class="row pt-4 ">
+        <!-- Left column for the form -->
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1000">
+          <!-- Bootstrap contact form -->
+          <form action="process.php" method="post">
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="exampleFormControlInput1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your name"
+                  name="name">
+              </div>
+              <div class="col-md-6">
+                <label for="exampleFormControlInput2" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="exampleFormControlInput2" placeholder="Your number"
+                  name="phone">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="exampleFormControlInput3" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput3" placeholder="name@example.com"
+                  name="email">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"
+                  name="message"></textarea>
+              </div>
+            </div>
+            <div class="row mb-3 align-items-center">
+              <div class="col-md-6 mb-3 mb-md-0">
+                <div class="g-recaptcha" data-sitekey="6LdwaMopAAAAACGhR-NPi2YY_p4giUWwEjAWzxiv"></div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex justify-content-md-end">
+                  <button type="submit" class="btn btn-outline-secondary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
 
-      <!-- Second row -->
-      <div class="row">
-        <!-- Left column for the map -->
-        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1000">
+
+        </div>
+        <!-- Right column for the map -->
+        <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-center justify-content-center" data-aos="fade-right"
+          data-aos-duration="1000">
           <!-- Google Map -->
+
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36240.966363829495!2d-1.7491201634223048!3d55.40929787730068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487df0ad52acc475%3A0x8eb5199fa5e06b68!2sAlnwick!5e0!3m2!1sen!2suk!4v1713280600228!5m2!1sen!2suk"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-        <!-- Right column for the image -->
-        <div class="col-md-6 d-flex align-items-right justify-content-center flex-column position-relative"
-          data-aos="fade-left" data-aos-duration="1000">
-          <!-- Image with button -->
-          <div class="text-right mb-3 position-relative">
-            <img src="assets/img/phone-booth.jpg" alt="Image" class="max-width-100" style="height: 300px; opacity: 50%">
-            <div class="overlay">
-              <p class="contact-img-p">Click here for our</p>
-              <button id="toggleFormButton" class="btn btn-secondary">Contact Form</button>
-            </div>
-          </div>
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+          </iframe>
+
         </div>
       </div>
-
-      <div id="contactFormDiv" class="row text-center justify-content-center mb-4" data-aos="fade-up">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="iframe-container" id="iframeContainer" style="position: relative;">
-              <iframe
-                src="https://docs.google.com/forms/d/e/1FAIpQLSd3V1SGFIypn9KDLEaHNRiS-WT-uxwsv6FR-co5GpdNDDjWvg/viewform?embedded=true"
-                width="640" height="950" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-              <button id="closeFormBtn" class="close-form-btn" title="Close Form">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff" class="bi bi-x-circle-fill"
-                  viewBox="0 0 16 16">
-                  <path
-                    d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zm3.354 4.646a.5.5 0 0 0-.708 0L8 7.293 5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 1 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0 0-.708z" />
-                </svg>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
     </div>
   </section>
+  <!-- Start Cookie Section -->
+  <!-- <div id="cookieConsent" class="text-center" style="display: none">
+    <p>
+      This website uses cookies to ensure you get the best experience on our
+      website. <a href="/cookies">Learn more</a>
+    </p>
+    <button class="btn btn-secondary" id="acceptCookies">Accept</button>
+    <button class="btn btn-outline-secondary " id="declineCookies">Decline</button>
+  </div> -->
+  <!-- End Cookie Section -->
 
   <!------------>
   <!-- Footer -->
