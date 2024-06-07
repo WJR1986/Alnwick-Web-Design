@@ -15,7 +15,7 @@ new colour palete (dark to light):
 body {
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   font-family: "Open Sans", sans-serif;
-  background-color: #152d2e;
+  background-color: #212529;
   color: #dddddd;
 }
 
@@ -87,7 +87,31 @@ h6 {
 
 #portfolio {
   background-color: #f8f6f4 !important;
-  color: #152d2e;
+}
+
+.gallery-headings {
+  color: lightgray;
+}
+
+#portfolio img {
+  border-radius: 5px !important;
+}
+
+#portfolio .container {
+  padding-top: 90px; /* Adjust this value based on the height of your fixed navbar */
+}
+
+/* Adjust button group spacing */
+@media (max-width: 575.98px) {
+  #portfolio .container {
+    width: 90%;
+    padding-top: 10px;
+  }
+}
+#portfolio .container {
+  background-color: #404447 !important;
+  color: #dfdfe0;
+  border-radius: 8px;
 }
 
 #logos,
@@ -96,7 +120,7 @@ h6 {
 }
 
 .portfolio-bg {
-  background-color: #f8f6f4 !important;
+  background-color: #212529 !important;
 }
 
 /* .portfolio-btn {
@@ -125,7 +149,7 @@ h6 {
   color: #152d2e !important;
 }
 .open-website-btn:hover {
-  color: #fff !important;
+  color: #808284 !important;
 }
 
 /*--------------------------------------------------------------
@@ -290,13 +314,13 @@ h6 {
 }
 
 .navbar-toggler {
-  background-color: #52796f;
+  background-color: #9fa1a3;
 }
 
 /* Mobile Navigation */
 @media (max-width: 768px) {
   .navbar {
-    border-bottom: 1px solid #52796f;
+    border-bottom: 1px solid #9fa1a3;
     width: 100vw;
     margin: 0 auto;
   }
@@ -304,7 +328,7 @@ h6 {
 
 @media (max-width: 992px) {
   .navbar {
-    border-bottom: 1px solid #52796f;
+    border-bottom: 1px solid #9fa1a3;
     width: 100vw;
     margin: 0 auto;
   }
@@ -328,9 +352,8 @@ h6 {
 } */
 
 .hero-section {
-  padding: 0;
+  padding-top: 70px; /* Adjust this value based on the height of your fixed navbar */
 }
-
 .hero:before {
   content: "";
   background: #212529;
@@ -482,6 +505,7 @@ h6 {
   z-index: 1000;
   margin: 0 auto; /* Center the image horizontally */
   display: block;
+  padding: 0;
 }
 
 @media (max-width: 768px) {
@@ -539,7 +563,7 @@ section {
 # About
 --------------------------------------------------------------*/
 #about {
-  background-color: #f8fbfe;
+  background-color: #f8f6f4;
   color: #152d2e;
   padding-bottom: 0px;
 }
@@ -677,6 +701,12 @@ section {
   color: #152d2e;
 }
 
+.service-btn {
+  width: 25%;
+  margin: 0; /* Reset margin */
+  float: left; /* Align the button to the left */
+}
+
 .card-img-top {
   /* padding-top: 10px; */
   max-height: 400px; /* Set the desired height */
@@ -686,12 +716,14 @@ section {
 .card-body {
   padding: 20px;
   text-align: center;
+  background-color: lightgray;
 }
 
 .card-img-top-portfolio {
   padding-top: 40px !important;
   max-height: 400px !important; /* Set the desired height */
   object-fit: contain !important; /* Maintain aspect ratio while covering the container */
+  background-color: lightgray;
 }
 
 .services-alignment {
@@ -702,6 +734,9 @@ section {
 @media (max-width: 768px) {
   .mob-services-padding {
     padding-top: 2rem;
+  }
+  #services .featurette-heading {
+    padding-top: 10px;
   }
 }
 
@@ -805,32 +840,6 @@ section {
   text-align: center; /* Center the content horizontally */
 }
 
-.contact-img-p {
-  color: #627254; /* Dark Green (627254) text color */
-  font-size: 18px; /* Adjust font size as needed */
-  margin-bottom: 10px; /* Add some space below the paragraph */
-}
-
-/* Image alignment on large screens */
-@media (min-width: 768px) {
-  .mx-md-0 {
-    margin-right: auto; /* Align to the right on medium screens and above */
-  }
-}
-
-/* Custom Footer Styles */
-.custom-footer {
-  color: #444444;
-  font-size: 14px;
-  background: #f8fbfe;
-  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
-}
-
-.custom-footer p {
-  padding-top: 5px;
-  margin-bottom: 0;
-}
-
 .social-buttons {
   margin-top: 20px;
 }
@@ -859,43 +868,59 @@ section {
   margin-top: 20px; /* Adjust distance between paragraph and divider */
   margin-bottom: 20px; /* Adjust distance between divider and social buttons */
 }
-#contactFormDiv {
-  overflow: hidden; /* Hide content when collapsed */
-  height: 0; /* Initially collapsed */
-  transition: height 0.3s ease; /* Smooth transition effect */
-}
-
-#contactFormDiv.expanded {
-  height: 900px; /* Expanded height */
-}
 
 #iframeContainer {
   position: relative;
 }
-
-.close-form-btn {
-  position: absolute;
-  top: 5px; /* Adjust as needed */
-  right: 5px; /* Adjust as needed */
-  width: 40px;
-  height: 40px;
-  background-color: #52796f;
-  color: #fff;
-  transition: all 0.8s ease; /* Transition for smooth animation */
-  display: flex;
-  justify-content: center; /* Center icon horizontally */
-  align-items: center; /* Center icon vertically */
-  border-radius: 8px; /* Adjust border radius for a rounded square */
-  border: none;
+@media (min-width: 768px) {
+  .bg-map {
+    background-color: #dfdfe0;
+    border: 1px solid white;
+  }
+}
+/* Sorts padding out on the input field for number on mobile screens */
+@media (max-width: 768px) {
+  .numberInputPaddingMob {
+    padding-top: 10px;
+  }
+  .col-md-6 {
+    width: 100%; /* Make both columns full width on smaller screens */
+  }
+  .g-recaptcha {
+    margin-bottom: 15px; /* Add some space below the reCAPTCHA box */
+  }
 }
 
-.close-form-btn:hover {
-  background-color: #84a98c;
+@media (max-width: 768px) {
+  .col-md-6 {
+    width: 100%; /* Make both columns full width on smaller screens */
+  }
+  .g-recaptcha {
+    margin-bottom: 15px; /* Add some space below the reCAPTCHA box */
+  }
+  .align-items-center {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to start of container */
+  }
+  .col-md-6:nth-child(2) {
+    margin-top: 20px; /* Add space between columns */
+  }
 }
 
-.close-form-btn svg {
-  width: 24px;
-  height: 24px;
+/*--------------------------------------------------------------
+# Custom Footer Styles
+--------------------------------------------------------------*/
+
+.custom-footer {
+  color: #444444;
+  font-size: 14px;
+  background: #f8fbfe;
+  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+}
+
+.custom-footer p {
+  padding-top: 5px;
+  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -946,6 +971,7 @@ section {
     width: 90%;
     margin: 0 auto;
     padding-bottom: 10px;
+    font-size: smaller;
   }
 }
 
@@ -974,4 +1000,81 @@ section {
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+/* Carousel reviews */
+
+#reviews {
+  background-color: #f8f6f4;
+  color: #152d2e;
+}
+
+.carousel-inner {
+  border: 1px solid lightgray;
+  background-color: lightgray;
+  border-radius: 8px;
+  padding: 20px; /* Add padding to create space around inner text */
+}
+
+.carousel-item {
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 380px; /* Set a minimum height */
+}
+
+.carousel-item.active {
+  display: flex;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  /* background-color: #f8f6f4 !important; */
+  border-radius: 8px;
+}
+
+.review-text {
+  font-size: 1.2em;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.review-text p:first-of-type {
+  font-family: "Caveat", cursive;
+  font-size: 1.8em;
+}
+
+.review-author {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  .review-text {
+    padding: 35px !important; /* Reduce padding on smaller screens */
+    font-size: 1rem;
+  }
+
+  .review-text p:first-of-type {
+    font-size: 1.5rem;
+  }
+
+  .carousel-item {
+    height: auto;
+  }
+
+  .carousel-inner {
+    padding: 0; /* Reset padding for smaller screens */
+  }
+
+  .carousel-control-prev-icon {
+    margin-right: 15px !important;
+  }
+
+  .carousel-control-next-icon {
+    margin-left: 15px !important;
+  }
 }
